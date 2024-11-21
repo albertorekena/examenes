@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Ejercicio2</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.titulo {
+			text-align: center;
+		}
+
+		.tabla {
+			width: 768px;
+			margin: 0 auto;
+			border-collapse: collapse;
+		}
+
+		.tabla__caption {
+			padding: 10px 0;
+		}
+
+		.tabla__fila-header {
+			background-color: #000;
+			color: #fff;
+		}
+
+		.tabla__celda-header {
+			padding: 10px 0;
+		}
+
+		.tabla__fila-body {
+			text-align: center;
+		}
+
+		.tabla__celda-body {
+			padding: 10px 0;
+		}
+
+		.tabla__fila-body:nth-child(even) {
+			background-color: #eee;
+		}
+
+		.tabla__celda-footer {
+			padding: 10px 0;
+			text-align: center;
+		}
+
+		.tabla__celda-footer {
+			padding: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="titulo">Menú</h1>
+
+	<main>
+		<table class="tabla">
+			<caption class="tabla__caption">Opciones disponibles</caption>
+			<thead>
+				<tr class="tabla__fila-header">
+					<th scope="col" class="tabla__celda-header">Bebidas</th>
+					<th scope="col" class="tabla__celda-header">Pasteles</th>
+					<th scope="col" class="tabla__celda-header">Café</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tabla__fila-body">
+					<td class="tabla__celda-body">Chai Latte</td>
+					<td class="tabla__celda-body">Tarta de Zanahoria</td>
+					<td class="tabla__celda-body">Café Irlandés</td>
+				</tr>
+				<tr class="tabla__fila-body">
+					<td class="tabla__celda-body">Smoothie de frutas</td>
+					<td class="tabla__celda-body">Magdalenas</td>
+					<td class="tabla__celda-body">Café Mocha</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" class="tabla__celda-footer">¡Disfruta de tu experiencia en nuestra cafetería!</td>
+				</tr>
+			</tfoot>
+	</main>
+	</table>
+</body>
+</html>

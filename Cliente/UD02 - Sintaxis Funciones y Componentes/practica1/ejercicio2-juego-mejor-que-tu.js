@@ -1,5 +1,7 @@
 "use strict";
 
+import "./puntuacion-equipos.json";
+
 // Carga de datos en node de un archivo json
 const equipos = require("./puntuacion-equipos.json");
 

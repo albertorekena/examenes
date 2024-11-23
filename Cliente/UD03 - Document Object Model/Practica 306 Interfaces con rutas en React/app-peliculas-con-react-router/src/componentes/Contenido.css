@@ -1,0 +1,39 @@
+.main {
+	margin-bottom: 16px;
+	padding: 10px;
+	border: 2px solid red;
+}
+
+.main__title {
+	text-align: center;
+}
+
+.botones-filtrado {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.boton-filtrado {
+	background-color: transparent;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.boton-filtrado--verde {
+	color: green;
+	border-color: green;
+}
+
+.boton-filtrado--purpura {
+	color: purple;
+	border-color: purple;
+}
+
+.boton-filtrado--azul {
+	color: blue;
+	border-color: blue;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Ejercicio04</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+		}
+
+		#caja {
+			background-color: blue;
+		}
+
+		#nueva-caja {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="caja"></div>
+	<script>
+		const caja = document.getElementById("caja");
+
+		const nuevaCaja = document.createElement("div");
+		nuevaCaja.setAttribute("id", "nueva-caja");
+
+		function insertAfter(nuevoElemento, existenteElemento) {
+			existenteElemento.insertAdjacentHTML("afterend", nuevoElemento.outerHTML);
+		}
+
+		insertAfter(nuevaCaja, caja);
+	</script>
+</body>
+</html>

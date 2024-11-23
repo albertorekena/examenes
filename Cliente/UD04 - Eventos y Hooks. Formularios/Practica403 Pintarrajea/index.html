@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Pintarrajea - Alberto Requena</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+	<h1 class="titulo-pagina">Pintarrajea - Tabla de Pintar</h1>
+	
+	<div>
+		<table class="tabla-seleccion-colores">
+			<tbody>
+				<tr class="tabla-seleccion-colores__fila-colores">
+					<!-- Se utilizan atributos de tipo "data" para recoger información del <td> correspondiente -->
+					<td class="tabla-seleccion-colores__celda-color tabla-seleccion-colores__celda-color--blanco" data-color="white"></td>
+					<td class="tabla-seleccion-colores__celda-color tabla-seleccion-colores__celda-color--azul" data-color="blue"></td>
+					<td class="tabla-seleccion-colores__celda-color tabla-seleccion-colores__celda-color--rojo" data-color="red"></td>
+					<td class="tabla-seleccion-colores__celda-color tabla-seleccion-colores__celda-color--verde" data-color="green"></td>
+					<td class="tabla-seleccion-colores__celda-color tabla-seleccion-colores__celda-color--amarillo" data-color="yellow"></td>
+					<td class="tabla-seleccion-colores__celda-color tabla-seleccion-colores__celda-color--negro" data-color="black"></td>
+				</tr>
+				<tr class="tabla-seleccion-colores__fila-nombres">
+					<td class="tabla-seleccion-colores__celda-nombre">blanco</td>
+					<td class="tabla-seleccion-colores__celda-nombre">azul</td>
+					<td class="tabla-seleccion-colores__celda-nombre">rojo</td>
+					<td class="tabla-seleccion-colores__celda-nombre">verde</td>
+					<td class="tabla-seleccion-colores__celda-nombre">amarillo</td>
+					<td class="tabla-seleccion-colores__celda-nombre">negro</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div>
+		<table class="tabla-donde-pintar" id="tabla-donde-pintar"></table>
+
+		<button type="button" class="boton-reiniciar" id="boton-reiniciar">Reiniciar tabla</button>
+	</div>
+</body>
+</html>

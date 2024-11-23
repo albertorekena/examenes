@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio03</title>
+  </head>
+  <body>
+    <p>
+      <input type="text" id="texto" value="texto feo"/>
+      <button>Añadir fila</button>
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Contenido</th>
+          <th>Operación</th>
+        </tr>
+      </thead>
+
+      <tbody id="bodyTabla"></tbody>
+    </table>
+
+    <script>
+      const button = document.querySelector("p > button");
+      const bodyTabla = document.getElementById("bodyTabla");
+      const input = document.getElementById("texto");
+
+      button.addEventListener("click", () => insertarFila());
+
+      function insertarFila() {
+        const filaId = "fila" + (bodyTabla.getElementsByTagName("tr").length + 1);
+        const texto = input.value;
+
+        bodyTabla.insertAdjacentHTML("beforeend", `
+          <tr>
+            <td id="${filaId}">${texto}</td>
+            <td><button onclick="toCani(this)">Caniar</button></td>
+          </tr>
+        `);
+      }
+
+      function toCani(boton) {
+        const cadena = boton.parentNode.parentNode.querySelector("td").textContent;
+
+        let toCaniCadenaK = "";
+        let toCaniCadenaMay = "";
+        const numeroHs = Math.ceil(Math.random() * 3) + 2;
+
+        for (let i = 0; i < cadena.length; i++) {
+          toCaniCadenaK += (cadena[i] == "c" || cadena[i] == "C") ? "k" : cadena[i];
+        }
+
+        for (let i = 0; i < toCaniCadenaK.length; i++) {
+          toCaniCadenaMay += (i % 2 == 0) ? toCaniCadenaK[i].toUpperCase() : toCaniCadenaK[i];
+        }
+
+        for (let i = 1; i <= numeroHs; i++) {
+          toCaniCadenaMay += "H";
+        }
+
+        boton.parentNode.parentNode.querySelector("td").textContent = toCaniCadenaMay;
+      }
+    </script>
+  </body>
+</html>

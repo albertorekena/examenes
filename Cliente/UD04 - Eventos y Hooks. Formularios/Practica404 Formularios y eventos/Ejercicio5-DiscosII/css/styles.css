@@ -1,0 +1,59 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+main {
+	max-width: 568px;
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+	margin-bottom: 10px;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+}
+
+input[type="checkbox"] {
+	margin-bottom: 6px;
+}
+
+button {
+	margin-bottom: 20px;
+}
+
+form > button {
+	display: block;
+}
+
+.discos__disco {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+
+.discos__key {
+	text-decoration: underline;
+}
+
+.color-red {
+	color: red;
+}
+
+.border-red {
+	border: 3px solid red;
+}
+
+.success {
+	font-size: 13.33px;
+	color: green;
+	font-weight: bold;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Generador de Formularios - Alberto Requena Sáez</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+	<script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+	<h1 class="title">Generador de Formularios</h1>
+
+	<main class="main">
+		<form class="form-anyadir-campo" id="form-anyadir-campo">
+			<h2 class="form-anyadir-campo__title">campo a añadir</h2>
+
+			<div class="form-anyadir-campo__select-completo">
+				<select class="form-anyadir-campo__select" id="form-anyadir-campo-select">
+					<option disabled selected>-- Selecciona una opción --</option>
+					<option value="input-texto">input-texto</option>
+					<option value="input-password">input-password</option>
+					<option value="textarea">textarea</option>
+					<option value="label">label</option>
+					<option value="img">img</option>
+					<option value="checkbox">checkbox</option>
+					<option value="radio">radio</option>
+					<option value="submit">submit</option>
+				</select>
+
+				<div id="campos-a-anyadir"></div>
+			</div>
+
+			<span class="form-anyadir-campo__error-span">&nbsp;<mark id="form-anyadir-campo__error-mark"></mark></span>
+
+			<input type="submit" value="añadir campo" class="form-anyadir-campo__input-submit" id="form-anyadir-campo-input-submit">
+		</form>
+
+		<form class="form-borrador" id="form-borrador">
+			<h2 class="form-borrador__title" id="form-borrador-title">borrador formulario</h2>
+
+			<div id="borrador-formulario"></div>
+
+			<input type="submit" value="crear formulario" class="form-borrador__input-submit"/>
+			<button type="button" class="form-borrador__button-button" id="form-borrador__button-button">borrar formulario</button>
+		</form>
+
+		<div class="div-formularios-creados" id="div-formularios-creados">
+			<h2 class="div-formularios-creados__title">formularios creados</h2>
+		</div>
+	</main>
+</body>
+</html>

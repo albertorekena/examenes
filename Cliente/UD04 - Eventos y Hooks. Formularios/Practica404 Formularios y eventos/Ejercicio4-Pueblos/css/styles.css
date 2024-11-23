@@ -1,0 +1,38 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	max-width: 468px;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+select {
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	display: block;
+}
+
+.error-select {
+	color: red;
+}
+
+span {
+	font-size: 13.33px;
+}
+
+.success {
+	color: green;
+	font-weight: bold;
+}

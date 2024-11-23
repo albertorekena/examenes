@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Pueblos - Alberto Requena Sáez</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+	<h1>Pueblos</h1>
+
+	<form id="form">
+		<h2>Formulario</h2>
+		
+		<div>
+			<select name="provincia" id="select-provincias">
+				<option value="" selected disabled>-- Selecciona Provincia --</option>
+				<option value="castellon">Castellón</option>
+				<option value="valencia">Valencia</option>
+				<option value="alicante">Alicante</option>
+			</select>
+			<span class="error-select" id="error-provincia"></span>
+		</div>
+
+		<div>
+			<select name="poblacion" id="select-poblaciones">
+				<option value="" selected disabled>-- Selecciona Población --</option>
+			</select>
+			<span class="error-select" id="error-poblacion"></span>
+		</div>
+
+		<span class="success" id="success">&nbsp;</span>
+		
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

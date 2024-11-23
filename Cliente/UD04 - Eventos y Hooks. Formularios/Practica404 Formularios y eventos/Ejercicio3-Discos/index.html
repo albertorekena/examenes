@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Discos - Alberto Requena Sáez</title>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+	<h1>Discos</h1>
+
+	<main>
+		<form id="form">
+			<div>
+				<label for="nombre">nombre</label>
+				<input type="text" id="nombre">
+				<span class="error" id="error-nombre"></span>
+			</div>
+			<div>
+				<label for="grupo">grupo</label>
+				<input type="text" id="grupo">
+				<span class="error" id="error-grupo"></span>
+			</div>
+			<div>
+				<label for="anyo-publicacion">año publicacion</label>
+				<!-- <input type="number" min="1900" max="2024" id="anyo-publicacion"> -->
+				<input type="number" placeholder="1900 - año actual" id="anyo-publicacion">
+				<span class="error" id="error-anyo-publicacion"></span>
+			</div>
+			<div>
+				<label for="tipo-musica">tipo música</label>
+				<select id="tipo-musica">
+					<option value="" selected disabled>-- Seleccionar Estilo --</option>
+					<option value="rock">rock</option>
+					<option value="progresive">progresive</option>
+					<option value="punk">punk</option>
+					<option value="trash">trash</option>
+				</select>
+				<span class="error" id="error-tipo-musica"></span>
+			</div>
+			<div>
+				<label for="localizacion">localizacion</label>
+				<input type="text" id="localizacion">
+				<span class="error" id="error-localizacion"></span>
+			</div>
+			<div>
+				<input type="checkbox" id="prestado">
+				<label for="prestado">prestado</label>
+			</div>
+			<span class="success" id="success">&nbsp;</span>
+			<button>Guardar</button>
+		</form>
+
+		<button type="button" id="mostrar-discos">Mostrar</button>
+
+		<div class="discos" id="div-discos"></div>
+	</main>
+</body>
+</html>

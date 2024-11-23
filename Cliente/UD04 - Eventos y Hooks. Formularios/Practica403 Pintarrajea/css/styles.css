@@ -1,0 +1,88 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-pagina {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.tabla-seleccion-colores {
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #000;
+	margin-bottom: 30px;
+}
+
+.tabla-seleccion-colores__fila-colores,
+.tabla-seleccion-colores__fila-nombres {
+	display: grid;
+	grid-template-columns: repeat(6, 70px);
+}
+
+.tabla-seleccion-colores__celda-color {
+	justify-self: center;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 6px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.tabla-seleccion-colores__celda-color--blanco {
+	background-color: #fff;
+}
+
+.tabla-seleccion-colores__celda-color--azul {
+	background-color: blue;
+}
+
+.tabla-seleccion-colores__celda-color--rojo {
+	background-color: red;
+}
+
+.tabla-seleccion-colores__celda-color--verde {
+	background-color: green;
+}
+
+.tabla-seleccion-colores__celda-color--amarillo {
+	background-color: yellow;
+}
+
+.tabla-seleccion-colores__celda-color--negro {
+	background-color: black;
+}
+
+.tabla-seleccion-colores__celda-nombre {
+	justify-self: center;
+}
+
+.tabla-donde-pintar {
+	background-color: #eee;
+	margin: 0 auto;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+
+.tabla-donde-pintar__tbody {
+	display: block;
+	border: 1px solid #fff;
+}
+
+.tabla-donde-pintar__fila {
+	display: block;
+	line-height: 10px;
+	white-space: nowrap;
+}
+
+.tabla-donde-pintar__celda {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+}
+
+.boton-reiniciar {
+	display: block;
+	margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+div {
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  left: -400px;
+}

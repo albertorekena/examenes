@@ -1,0 +1,13 @@
+.interpretes {
+	display: none;
+}
+
+.interpretes--mostrar {
+	display: block;
+}
+
+.interpretes__lista {
+	padding: 10px;
+	list-style: none;
+	border: 2px dashed blue;
+}

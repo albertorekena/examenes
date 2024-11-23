@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Ejercicio02</title>
+</head>
+<body>
+	<ul>
+		<li>Soy una muestra fea</li>
+	</ul>
+
+	<script>
+		const ul = document.querySelector("ul");
+		ul.insertAdjacentHTML("afterbegin", "<button>Nuevo número</button>");
+		const button = document.querySelector("button");
+		button.addEventListener("click", () => ul.insertAdjacentHTML("beforeend", `<li>${Math.ceil(Math.random() * 100)}</li>`));
+	</script>
+</body>
+</html>

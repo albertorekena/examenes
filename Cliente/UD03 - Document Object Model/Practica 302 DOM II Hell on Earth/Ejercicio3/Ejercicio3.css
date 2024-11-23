@@ -1,0 +1,43 @@
+.parrafo1 {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    color: blue;
+    border: 10px solid red;
+}
+
+.parrafo2 {
+    width: 96%;
+    height: 20px;
+    padding: 0px;
+    color: yellowgreen;
+    border: 3px solid black;
+}
+
+.parrafo3 {
+    width: 50%;
+    height: 30px;
+    padding: 20px;
+    color: pink;
+    border: 1px solid blue;
+}
+
+.parrafo4 {
+    width: fit-content;
+    height: 50px;
+    padding: 10px;
+    color: aqua;
+    border: 20px solid green;
+}
+
+.parrafo5 {
+    width: 670px;
+    height: 40px;
+    padding: 40px;
+    color: black;
+    border: 7px solid fuchsia;
+}
+
+.desaparecido {
+    visibility: hidden;
+}

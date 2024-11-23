@@ -1,0 +1,40 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+main {
+	max-width: 368px;
+	margin: 0 auto;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+select {
+	margin-bottom: 10px;
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+.cursiva {
+	font-style: italic;
+}
+
+.subrayado {
+	text-decoration: underline;
+}
+
+.error {
+	width: fit-content;
+	margin-bottom: 2px;
+	color: red;
+}

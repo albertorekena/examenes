@@ -1,0 +1,11 @@
+.header {
+	margin-bottom: 16px;
+	padding: 20px;
+	border: 2px solid green;
+}
+
+.header__logo {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+}

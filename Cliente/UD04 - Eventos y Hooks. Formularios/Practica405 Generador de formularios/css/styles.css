@@ -1,0 +1,88 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+	text-align: center;
+}
+
+.main {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.form-anyadir-campo,
+.form-borrador {
+	display: block;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+}
+
+.form-anyadir-campo__title,
+.form-borrador__title,
+.div-formularios-creados__title {
+	font-size: 16px;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.form-anyadir-campo__select-completo {
+	display: flex;
+	gap: 20px;
+}
+
+.form-anyadir-campo__select {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-anyadir-campo__campo-a-anyadir {
+	margin-right: 14px;
+}
+
+.form-anyadir-campo__error-span {
+	display: block;
+	width: fit-content;
+	margin-bottom: 4px;
+	font-size: 13.33px;
+}
+
+.form-anyadir-campo__input-submit {
+	display: block;
+}
+
+.form-borrador__input-submit {
+	margin-right: 10px;
+}
+
+.form-borrador__button-button {}
+
+#borrador-formulario > *,
+.nuevo-formulario > * {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#borrador-formulario > label,
+.nuevo-formulario > label {
+	font-size: 13.33px;
+	text-decoration: underline;
+}
+
+.div-formularios-creados {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+.nuevo-formulario {
+	margin-bottom: 16px;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
+.nuevo-formulario__title {
+	font-size: 13.33px;
+	text-decoration: underline;
+	text-align: center;
+}

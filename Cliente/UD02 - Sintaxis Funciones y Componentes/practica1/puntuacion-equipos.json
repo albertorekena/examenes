@@ -1,0 +1,14 @@
+[
+  {
+    "nombreEquipo":"Juan",
+    "puntuacionEquipo":[89, 120, 103]
+  },
+  {
+    "nombreEquipo":"Miguel",
+    "puntuacionEquipo":[116, 94, 123]
+  },
+  {
+    "nombreEquipo":"María",
+    "puntuacionEquipo":[97, 134, 105]
+  }
+]

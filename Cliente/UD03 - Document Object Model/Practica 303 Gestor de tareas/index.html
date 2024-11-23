@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Practica 303 Gestor de tareas - Alberto Requena Sáez</title>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script src="js/app.js" defer></script>
+</head>
+<body>
+	<!-- Se ha utilizado la metodología BEM para la creación de los nombres de las clases de css -->
+	<h1 class="titulo-pagina">Gestor de Tareas</h1>
+
+	<main class="contenedor" id="main">
+		<!-- Se añade onsubmit="event.preventDefault();" para evitar que el navegador realize alguna acción automáticamente -->
+		<form onsubmit="event.preventDefault();" class="formulario">
+			<textarea id="tarea-a-crear" class="formulario__textarea"></textarea>
+			<mark class="aviso-error" id="aviso-error">&nbsp;</mark>
+			<button type="submit" onclick="crearTarea()" class="boton boton--centrado formulario__boton">Añadir</button>
+		</form>
+	
+		<button type="button" onclick="mostrarTareas()" class="boton boton--centrado">Mostrar</button>
+	
+		<div class="tareas">
+			<div class="tareas__columna">
+				<h2 class="tareas__titulo">Pendientes</h2>
+				<div class="tareas__tareas" id="tareas-pendientes"></div>
+			</div>
+	
+			<div class="tareas__columna">
+				<div class="tareas__columna">
+					<h2 class="tareas__titulo">Acabadas</h2>
+					<div class="tareas__tareas" id="tareas-acabadas"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tareas-archivadas" id="tareas-archivadas"></div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.acordeon {
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+.elemento {
+  background-color: #f1f1f1;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contenido {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.oculto {
+  display: none;
+}

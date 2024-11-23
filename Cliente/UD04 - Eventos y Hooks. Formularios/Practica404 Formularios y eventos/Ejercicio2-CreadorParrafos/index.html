@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Creador Párrafos - Alberto Requena Sáez</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+	<h1>Creador Párrafos</h1>
+
+	<main>
+		<form id="form">
+			<textarea id="textarea"></textarea>
+			<select id="select">
+				<option value="" selected disabled>-- Seleccionar estilo --</option>
+				<option value="negrita">negrita</option>
+				<option value="cursiva">cursiva</option>
+				<option value="subrayado">subrayado</option>
+			</select>
+			<div class="error" id="error">&nbsp;</div>
+			<button>Crear párrafo</button>
+		</form>
+
+		<div id="resultado"></div>
+	</main>
+</body>
+</html>

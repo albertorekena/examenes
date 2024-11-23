@@ -1,0 +1,130 @@
+/* Se ha utilizado la variable --color-fondo para una mayor comodidad */
+:root {
+	--color-fondo: #000080;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton {
+	display: block;
+	background-color: var(--color-fondo);
+	padding: 8px 24px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 8px;
+}
+
+.boton--centrado {
+	margin: 0 auto;
+}
+
+.botones-fila {
+	display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.titulo-pagina {
+	text-align: center;
+}
+
+.contenedor {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.formulario {
+	width: 70%;
+  padding: 10px;
+	margin: 0 auto 30px auto;
+  border: 1px solid #000;
+}
+
+.formulario__textarea {
+	display: block;
+	width: 100%;
+	height: 60px;
+  resize: none;
+  overflow: hidden;
+}
+
+/* .formulario__boton {} */
+
+.aviso-error {
+  display: block;
+  visibility: hidden;
+  padding: 8px;
+}
+
+.aviso-error--mostrar {
+  visibility: visible;
+}
+
+.tareas {
+	margin-top: 24px;
+  margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+}
+
+.tareas__columna {
+	background-color: #e3f2fd;
+}
+
+.tareas__titulo {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	background-color: var(--color-fondo);
+	color: #fff;
+	text-align: center;
+}
+
+.tareas__tareas {
+  padding: 10px;
+}
+
+.tareas__tarea {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 14px;
+}
+
+.tareas__tarea:last-of-type {
+  margin-bottom: 0;
+}
+
+.tareas__texto {
+  margin-bottom: 8px;
+}
+
+.tareas__tarea-acabada {
+  background-color: green;
+  color: #fff;
+}
+
+.tareas-archivadas {
+	visibility: hidden;
+	background-color: #eee;
+	padding: 10px;
+}
+
+.tareas-archivadas--mostrar {
+	visibility: visible;
+}
+
+.tareas-archivadas__tarea {
+	text-decoration: line-through;
+}
+
+/* .tareas-archivadas__no-tareas {} */

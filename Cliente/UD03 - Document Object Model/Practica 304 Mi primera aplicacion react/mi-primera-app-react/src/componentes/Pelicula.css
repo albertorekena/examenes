@@ -1,0 +1,19 @@
+.pelicula {
+	padding: 20px;
+	border: 2px solid red;
+}
+
+.pelicula__titulo {
+	margin: 10px 0 30px;
+	font-size: 36px;
+}
+
+.pelicula__poster {
+	width: 250px;
+}
+
+.pelicula__cartel-y-resumen {
+	margin-bottom: 30px;
+	display: flex;
+	gap: 30px;
+}

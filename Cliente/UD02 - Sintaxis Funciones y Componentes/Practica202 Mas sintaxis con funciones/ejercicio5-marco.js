@@ -1,8 +1,6 @@
 "use strict";
 
 function dibujarMarco(ladoCuadradoExterior, ladoCuadradoInterior) {
-	console.log("\n\n");
-
 	// Se asegura que haya el mismo número de caracteres a la izquierda y a la derecha del cuadrado interior
 	if (ladoCuadradoExterior > 0 && ladoCuadradoInterior > 0 && ((ladoCuadradoExterior - ladoCuadradoInterior) % 2 == 0)) {
 		let fila = "";
@@ -24,8 +22,6 @@ function dibujarMarco(ladoCuadradoExterior, ladoCuadradoInterior) {
 	} else {
 		console.log("Por favor, introduce números positivos, donde el ladoCuadradoExterior sea mayor que ladoCuadradoInterior y, que la diferencia entre ambos lados sea par.");
 	}
-
-	console.log("\n\n");
 }
 
 dibujarMarco(21, 7);

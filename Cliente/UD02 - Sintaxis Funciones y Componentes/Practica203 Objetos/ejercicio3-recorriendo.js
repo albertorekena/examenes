@@ -16,13 +16,11 @@ const discente = {
 		console.log("Aficiones: " + this.aficiones.join(", "));
 	},
 	imprimirInforme:function () {
-		console.log("\n\n");
 		console.log("ID: " + this.id);
 		console.log("Nombre: " + this.nombre);
 		this.imprimirAficiones();
 		console.log("Notas: " + "Primera Evaluación: " + this.notas.primera + ", Segunda Evaluación: " + this.notas.segunda + ", Tercera Evaluación: " + this.notas.tercera);
 		console.log("Nota Media: " + this.calcularMedia());
-		console.log("\n\n");
 	}
 };
 

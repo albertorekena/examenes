@@ -3,8 +3,8 @@
 function toCani(cadena) {
   let toCaniCadenaK = "";
   let toCaniCadenaMay = "";
-  // Con numeroHs se obtiene un número entre 3 y 5
-  const numeroHs = Math.ceil(Math.random() * 3) + 2;
+
+  const numeroHs = Math.floor(Math.random() * 4) + 2;
 
   if (typeof cadena == "string") {
     for (let i = 0; i < cadena.length; i++) {
@@ -14,17 +14,15 @@ function toCani(cadena) {
     for (let i = 0; i < toCaniCadenaK.length; i++) {
       toCaniCadenaMay += (i % 2 == 0) ? toCaniCadenaK[i].toUpperCase() : toCaniCadenaK[i];
     }
+
+    for (let i = 1; i <= numeroHs; i++) {
+      toCaniCadenaMay += "H";
+    }
   } else {
     throw new Error("El parámetro introducido en la función no es una cadena");
-  }
-
-  for (let i = 1; i <= numeroHs; i++) {
-    toCaniCadenaMay += "H";
   }
 
   return toCaniCadenaMay;
 }
 
-console.log("\n\n");
 console.log(toCani("una cadena cani es como esta"));
-console.log("\n\n");

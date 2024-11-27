@@ -25,7 +25,6 @@ const discente = {
 };
 
 function curso() {
-	// Con el siguiente if se comprueba que la firma de la función sea la que indica el enunciado	
   if (
     arguments.length != 3
     || typeof arguments[0] != "string"
@@ -41,22 +40,18 @@ function curso() {
 		descripcionCurso:arguments[2],
 		alumnado:[],
 		matricular:function (disc) {
-      		cursoObj.alumnado = [...cursoObj.alumnado, disc];
-    	}
+			cursoObj.alumnado = [...this.alumnado, disc];
+		}
 	};
 }
 
 const cursoObj = curso("Matematicas", 2024, "Curso de mates");
-console.log("\n\n");
 console.log("nombreCurso: " + cursoObj.nombreCurso);
 console.log("anyoCurso: " + cursoObj.anyoCurso);
 console.log("descripcionCurso: " + cursoObj.descripcionCurso);
 console.log("alumnado: [" + cursoObj.alumnado.join(", ") + "]");
 
-console.log("\n");
-// Se añade un discente para comprobar el funcionamiento del método matricular() del objeto
 console.log("Añadiendo discente a la propiedad \"alumnado\"...")
 cursoObj.matricular(discente);
 console.log("alumnado[0]:");
 cursoObj.alumnado[0].imprimirInforme();
-console.log("\n\n");

@@ -1,2 +1,0 @@
-Los archivos javascript han sido creados para ser ejecutados con node, excepto los acompañados
-por su archivo html, que están preparados para ser ejecutados en el navegador.

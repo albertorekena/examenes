@@ -20,7 +20,5 @@ function masDnis(letra) {
 
 dnisTotales = masDnis("H");
 
-console.log("\n\n");
 console.log("Hay " + dnisTotales.length + " DNI entre " + dniInicial + " y " + dniFinal);
 console.log(dnisTotales.join("   "));
-console.log("\n\n");

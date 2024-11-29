@@ -1,6 +1,6 @@
 "use strict";
 
-const intv = setInterval(solicitarDni, 5000);
+const intv = setInterval(solicitarDni, 2000);
 const relacionLetrasDni = "TRWAGMYFPDXBNJZSQVHLCKE";
 const dnis = [];
 
@@ -23,6 +23,7 @@ function solicitarDni() {
       dnis.forEach(dni => console.log(dni));
     }
   } else {
+		clearInterval(intv);
     throw new Error("Introdujiste un dato incorrecto :(");
   }
 }

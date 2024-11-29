@@ -36,8 +36,8 @@ function isPrimoFunc(numero) {
 		isPrimo = false;
 	}
 
-	if (numero > 1) {
-		const sqrtNumeroRedondeadoArriba = Math.floor(Math.sqrt(numero));
+	if (numero > 2) {
+		const sqrtNumeroRedondeadoArriba = Math.ceil(Math.sqrt(numero));
 
 		for (let i = 2; i <= sqrtNumeroRedondeadoArriba && isPrimo; i++) {
 			if (numero % i == 0) isPrimo = false; 
